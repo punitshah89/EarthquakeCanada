@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceCategory android:title="Flag" android:key="first_category">
+    <ListPreference 
+            android:key="listLatestPref"
+            android:title="Latest earthquakes by"
+            android:summary="default days to load latest earthquakes."
+            android:entries="@array/listLatestPrefItems"
+            android:entryValues="@array/listLatestPrefValues"
+        ></ListPreference>
+    
+    <ListPreference 
+            android:key="listMagnitudePref"
+            android:title="Magnitude choice"
+            android:summary="get data limited by earthquake magnitude."
+            android:entries="@array/magnitude_items"
+            android:entryValues="@array/magnitude_values"
+        ></ListPreference>
+    
+    <ListPreference 
+            android:key="listDistancePref"
+            android:title="Filter by distance"
+            android:summary="get near-by earthquakes only."
+            android:entries="@array/distance_items"
+            android:entryValues="@array/distance_values"
+        ></ListPreference>
+    
+    <ListPreference 
+            android:key="listNotificationPref"
+            android:title="Alert for new earthquake"
+            android:summary="Get notified when new earthquake detected in Canada."
+            android:entries="@array/notification_items"
+            android:entryValues="@array/notification_values"
+        ></ListPreference>
+    
+    <ListPreference 
+            android:key="listSortTypePref"
+            android:title="Sorting method"
+            android:summary="Define ascending/descending sort."
+            android:entries="@array/sorttype_items"
+            android:entryValues="@array/sorttype_values"
+        ></ListPreference>
+    
+</PreferenceCategory>
+
+<PreferenceCategory android:title="Battery info" android:key="second_category">
+    <Preference
+		android:title="About us"
+		android:summary="check application features"
+		android:key="aboutPref" android:textColor="#FFFFFF"
+		android:textColorHighlight="#FFFFFF"></Preference>
+</PreferenceCategory>
+
+</PreferenceScreen>

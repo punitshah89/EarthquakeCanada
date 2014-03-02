@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListView android:layout_width="fill_parent" 
+	  android:layout_height="fill_parent" 
+	  android:layout_weight="1.0"
+	  android:fastScrollEnabled="true"
+	  android:smoothScrollbar="true"
+	  android:id="@+id/latest_eqlist" android:listSelector="@drawable/list_selector" android:drawSelectorOnTop="true" android:cacheColorHint="#ffffff">
+	</ListView>
+</FrameLayout>
