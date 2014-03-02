@@ -45,6 +45,7 @@
             android:id="@+id/spYear"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:entries="@array/year_items"
             android:textColor="#000000" />
     </TableRow>
 

@@ -76,6 +76,8 @@ public class HistoryEarthquakeMain extends SherlockFragmentActivity {
 				moreOptions(eq, position);
 			}
 		});
+		
+		
 
 		latest_eqlist.setOnItemLongClickListener(new OnItemLongClickListener() {
 
@@ -113,7 +115,7 @@ public class HistoryEarthquakeMain extends SherlockFragmentActivity {
 					startActivity(intent);
 				} else if (items[item].toString().equals("View map")) {
 					Intent intent = new Intent(HistoryEarthquakeMain.this,
-							SingleEarthquakeMain.class);
+							EqGmap.class);
 					intent.putExtra("full_title", eq.getEqfulltitle());
 					intent.putExtra("datetime", eq.getEqorigintime());
 					intent.putExtra("geolon", eq.getEqlon());
@@ -407,14 +409,12 @@ public class HistoryEarthquakeMain extends SherlockFragmentActivity {
 					if (!provienceCode.equals("NA")
 							&& !codes[0].trim().equals(provienceCode))
 						continue;
-					eq.setEqtitle(Character.toUpperCase(title[0].charAt(0))
-							+ title[0].substring(1).toLowerCase().trim());
+					eq.setEqtitle(title[0].trim());
 					eq.setEqprovience(codes[0].trim().toUpperCase());
 				} else {
 					if (!provienceCode.equals("OT"))
 						continue;
-					eq.setEqtitle(Character.toUpperCase(title[0].charAt(0))
-							+ title[0].substring(1).toLowerCase().trim());
+					eq.setEqtitle(title[0].trim());
 					eq.setEqprovience("OTHER");
 				}
 				eq.setEqmagnitude(String.format("%.1f",

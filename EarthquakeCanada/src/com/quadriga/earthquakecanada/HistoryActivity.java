@@ -44,9 +44,6 @@ public class HistoryActivity extends SherlockFragment {
 
 		findViewById(rootView);
 
-		GetStart StartTaskObject = new GetStart();
-		StartTaskObject.execute();
-
 		btnSearch.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -58,34 +55,6 @@ public class HistoryActivity extends SherlockFragment {
 		return rootView;
 	}
 
-	class GetStart extends AsyncTask<Object, Void, String> {
-		@Override
-		public void onPreExecute() {
-			super.onPreExecute();
-		}
-
-		@Override
-		public String doInBackground(Object... params) {
-			Calendar c = Calendar.getInstance();
-			int currentYear = c.get(Calendar.YEAR);
-			yearValues = new String[currentYear - 1899];
-			for (int i = 0; currentYear > 2000; i++) {
-				yearValues[i] = String.valueOf(currentYear);
-				currentYear--;
-			}
-			return null;
-		}
-
-		@Override
-		protected void onPostExecute(String result) {
-			super.onPostExecute(result);
-			Log.e("Length: ", String.valueOf(yearValues.length));
-			spYear.setAdapter(new ArrayAdapter<String>(getActivity()
-					.getApplicationContext(),
-					android.R.layout.simple_spinner_item, yearValues));
-		}
-	}
-
 	public void getHistoryUrl() {
 		String provienceValues[] = getResources().getStringArray(
 				R.array.provience_values);
@@ -94,7 +63,7 @@ public class HistoryActivity extends SherlockFragment {
 		String magnitudeValues[] = getResources().getStringArray(
 				R.array.magnitude_values);
 
-		if (monthValues[month.getSelectedItemPosition()].equals("")) {
+		if (monthValues[month.getSelectedItemPosition()].equals("NA")) {
 			url = getResources().getString(R.string.urlbydate)
 					+ spYear.getSelectedItem().toString() + ".xml";
 		} else {
@@ -112,7 +81,7 @@ public class HistoryActivity extends SherlockFragment {
 		intent.putExtra("magnitude_value", mag);
 		startActivity(intent);
 	}
-
+	
 	public void findViewById(View rootView) {
 		setHasOptionsMenu(true);
 		btnSearch = (Button) rootView.findViewById(R.id.btnSearch);

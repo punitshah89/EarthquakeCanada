@@ -142,7 +142,7 @@ public class LatestEarthquakeMain extends SherlockFragment {
 					startActivity(intent);
 				} else if (items[item].toString().equals("View map")) {
 					Intent intent = new Intent(getActivity(),
-							SingleEarthquakeMain.class);
+							EqGmap.class);
 					intent.putExtra("full_title", eq.getEqfulltitle());
 					intent.putExtra("datetime", eq.getEqorigintime());
 					intent.putExtra("geolon", eq.getEqlon());
@@ -444,12 +444,10 @@ public class LatestEarthquakeMain extends SherlockFragment {
 
 			if (title.length > 1) {
 				String codes[] = title[1].trim().split(" ");
-				eq.setEqtitle(Character.toUpperCase(title[0].charAt(0))
-						+ title[0].substring(1).toLowerCase().trim());
+				eq.setEqtitle(title[0].trim());
 				eq.setEqprovience(codes[0].trim().toUpperCase());
 			} else {
-				eq.setEqtitle(Character.toUpperCase(title[0].charAt(0))
-						+ title[0].substring(1).toLowerCase().trim());
+				eq.setEqtitle(title[0].trim());
 				eq.setEqprovience("OTHER");
 			}
 
