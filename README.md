@@ -8,3 +8,11 @@ Earthquake is useful android application to get earthquakes occured in Canada ar
 
 Developed by:-
 Team Quadriga
+
+Contributors
+================
+Punit Shah (https://github.com/punitshah89)
+Viren Gujariya
+Sanjay Kapur
+Bhanu Chander Reddy 
+================
