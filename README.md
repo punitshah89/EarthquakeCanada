@@ -10,7 +10,7 @@ Developed by:-
 Team Quadriga
 
 
-<h1>Contributors</h1>
+Contributors
 ================
 <ul>
   <li>Punit Shah (https://github.com/punitshah89)</li>
