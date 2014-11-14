@@ -40,8 +40,8 @@
 </table>
 </p>
 <p>
-<u><h2> App Demo</h2></u>
-<iframe width="560" height="315" src="//www.youtube.com/embed/bCfE-33WKH0?list=UUy5Xa0S1V15ZByaugGrJ76w" frameborder="0" allowfullscreen></iframe>
+<u><h2> <a href="https://www.youtube.com/watch?v=bCfE-33WKH0&list=UUy5Xa0S1V15ZByaugGrJ76w">App Demo<</a>/h2></u>
+<a href="https://www.youtube.com/watch?v=bCfE-33WKH0&list=UUy5Xa0S1V15ZByaugGrJ76w">Click here to see app demo </a>
 </p>
 <br />
 <p><u><h2> Developed By </h2></u></p>
