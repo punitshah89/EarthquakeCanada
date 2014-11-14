@@ -37,10 +37,12 @@
 <td><div class="separator" style="clear: both; text-align: center;">
 <img border="0" src="https://raw.githubusercontent.com/punitshah89/EarthquakeCanada/develop/about.png" /></div>
 </td>
+</tr>
+</tbody>
 </table>
 </p>
 <p>
-<u><h2> <a href="https://www.youtube.com/watch?v=bCfE-33WKH0&list=UUy5Xa0S1V15ZByaugGrJ76w">App Demo<</a>/h2></u>
+<u><h2> <a href="https://www.youtube.com/watch?v=bCfE-33WKH0&list=UUy5Xa0S1V15ZByaugGrJ76w">App Demo</a></h2></u>
 <a href="https://www.youtube.com/watch?v=bCfE-33WKH0&list=UUy5Xa0S1V15ZByaugGrJ76w">Click here to see app demo </a>
 </p>
 <br />
