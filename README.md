@@ -2,7 +2,7 @@
 <h2><u>Earthquake Canada Android App</u></marquee></h2><img src="https://raw.githubusercontent.com/punitshah89/EarthquakeCanada/develop/EarthquakeCanada/assets/canada.png" height="40" width="40" align="right" /> 
 <p><u>Description :-</u>
 <ul>
-  <li>Earthquake application is developed under Canadian Federal data for CODE competition.</li>
+  <li>Earthquake application is developed under Canadian Federal data for CODE competition in 48 hours.</li>
   <li>Earthquake is android mobile application that has library dependacy on actionbarsherlock to use Action Bar and it's features. and It is essential to import actionbarsherlock library to run Earthquake project.</li>
 <li>Earthquake is useful android application to get earthquakes occured in Canada area.</li>
 <li>It helps to keep track about earthquakes that occurred within the last 7 days, 30 days or an year ago within Canada.</li>
